@@ -5,3 +5,7 @@
   "I don't do a whole lot ... yet."
   [& args]
   (println "Hello, World!"))
+
+(defn say "とりあえずの実装"
+  [n]
+  1)
