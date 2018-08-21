@@ -6,6 +6,6 @@
   [& args]
   (println "Hello, World!"))
 
-(defn say "とりあえずの実装"
-  [n]
-  1)
+(defn say "Fizzを考えた実装" [n]
+  (cond (= 0 (mod n 3)) "Fizz"
+  :else n))
