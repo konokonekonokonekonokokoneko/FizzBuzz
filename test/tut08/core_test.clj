@@ -24,4 +24,10 @@
   (testing "3の倍数でありかつ5の倍数である時FizzBuzzと返す"
     (are [n] (= "FizzBuzz" (say n))
          15
-         30)))
+         30))
+  (testing "文字列の場合は例外が発生する"
+    (are [n] (thrown? java.lang.ClassCastException (say n))
+         ""
+         "1"
+         "string"
+         )))
